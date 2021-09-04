@@ -1,0 +1,50 @@
+IP, Theft, and OpenSource
+https://medium.com/h-o-l-o/why-we-need-a-new-open-source-license-c8faf8a8dadd
+
+Junto Commercial project announcing OpenSource
+https://medium.com/holochain/junto-a-new-breed-of-social-media-powered-by-holochain-1faeff487f1d
+
+
+INSTANCE = AGENT + DNA
+
+Exclamation mark = Rust Macro
+
+To commit an entry, you need to define an entry type
+
+Entries can be Public or Private (shared or not shared to DHT)
+	Right now, only Public is supported
+	
+Ok(()) in validation call-back just lets anything be valid
+
+cas is short for content-addressable storage
+	two pieces of data that are the same don't take up twice the amount of storage
+	they take up only one, because when hashed, they have the same address
+	Address is the resulting hash of the entry and its address in the chain and DHT, where it can be retrieved from
+	
+.into() is for type conversion
+
+Visual Studio Code and RLS (rust lang extension)
+
+& means reference, so if in function signature, then pass argument with ampersand
+
+You can daisy function return values in Rust by leaving out the semi-colon for the function call.
+
+Traits need to expose function calls via hc_public
+
+Scenarios work independently with their own instantiation of the DNA
+	i.e. data from one scenario does not carry over to another scenario
+	
+QUESTIONS
+1. Syntax questions? 
+	What is Rust syntax and what is holochain syntax?
+	Zome macro, simplest zome, why are some things delimited by square brackets and others by curly
+2. Should we run npm audit when this message comes up?
+found 63 low severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+	
+FEEDBACK
+The two items of Day2 point to the same Medium article; a bit confusing
+First Steps to DNA Source Code Page
+Tutorial for Developing First DNA Source Code URL
+https://medium.com/holochain/first-steps-writing-holochain-happs-with-rust-80ae111960e

@@ -1,0 +1,68 @@
+Notes:
+
+####NOTE 1
+
+Events Goer can be reset by deleting contents of tmp-storage
+
+Change storage from file-based to memory based by changing conductor file (*.toml)
+[instances.storage]
+type = "file"
+path= "tmp-storage"
+
+to
+[instances.storage]
+type = "memory"
+
+###################
+
+####NOTE 2
+Logger has name-space handles for easy filtering, which can be edited in the *.toml
+
+debug/net/handle is very noisy
+###################
+
+####NOTE 3
+Zomes unit of composability, derived from "chromosomes"
+Each zome compiles to its own WebAssembly
+###################
+
+####NOTE 4
+Nothing is ever deleted from the chain
+The chain is an append-only sequence
+There is pseudo-update and delete
+###################
+
+####NOTE 5
+lib.rs has "define_zome!", a macro that defines the zome, relies on hdk imports. Each zome has functions and traits. Each function has input, outputs, and handlers.
+###################
+
+
+####NOTE 6
+https://developer.holochain.org
+Guidebook covers wide range of topics
+API covers hdk
+	define_zome! macro
+	commit_entry
+	delete_entry
+	update_entry
+	get_entry
+###################
+
+####NOTE 7
+User interfaces (web front-end) developed in React
+For now, hApps only in Rust because the HDK is in Rust (and Rust is a language that is JSON serializable/parseable into WebAssembly)
+###################
+
+####NOTE 8
+Telegram and Mattermost Communities for real-time chat
+###################
+
+Questions
+The tmp storage for Events Goer which consists of easily viewable files, when the app gets deployed, will tmp storage look the same in other agents' copy?
+Alternatively, what gets copied?
+
+Feedback:
+1. Repeated questions in Self-Test
+2. Diagram of all the components for an happ
+3. Diagram for all tools and interdependencies for development
+4. Broken link in API Guide: When clicking the big R https://developer.holochain.org/api/0.0.4-alpha//index.html

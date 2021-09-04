@@ -1,0 +1,4 @@
+NOTES:
+Max entry size is theoretically WASM memory maximum (4GB)
+	Holo team has only made it as big as 10MB
+	Needs more R&D

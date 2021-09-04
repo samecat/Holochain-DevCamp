@@ -1,0 +1,34 @@
+NOTES
+The expected hash value QmbL7tDsQumvsUTDVZo5mtJknhV6bT28yZDuTdyHQdfqTs
+depends on struct member names ("name"), entry! name ("person").
+
+
+QUESTIONS
+
+Why does an entry need to have a struct as native_type?
+	Why can't we put type String instead of Person?
+
+Where would you see the error string message from the zome entry's validation code?
+
+Why did I need a different return type for link_entries?
+	hdk::link_entries
+
+Why is link's tag not enforced by link_entries?
+	It is "enforced" by get_links:
+    × should be equivalent
+    -----------------------
+      operator: deepEqual
+      expected: |-
+        { Ok: { addresses: [ 'QmPcNictUVyk9tki1TwnsZ2RzzuPYdNPoFXZReRQLUJb4X' ] } }
+      actual: |-
+        { Ok: { addresses: [] } }
+        
+FEEDBACK
+Day 3, Chapter 9
+	In edition to schemas, developers can write more sophisticated
+	In "addition" to schemas
+	
+	Validation rules are at the heart Holochain.
+	"of"
+
+
